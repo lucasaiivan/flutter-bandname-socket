@@ -27,7 +27,7 @@ class SocketService with ChangeNotifier{
 
   void _initConfig(){
     // Flutter client 192.168.1.45 lanus /192.168.0.12 liniers
-    _socket = IO.io('http://192.168.1.45:3000/',{
+    _socket = IO.io('https://flutter-socket-server-lb-fe0eb6a6be91.herokuapp.com/',{
       'transports':['websocket'],
       'autoConnect': true,
     });
